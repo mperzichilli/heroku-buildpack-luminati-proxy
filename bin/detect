@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  echo "-----> OS type of GNU-Linux detected"
+  echo "       Buildpack heroku-buildpack-luminati-proxy is valid for this platform"
+  exit 0
+else
+  exit 1
+fi
